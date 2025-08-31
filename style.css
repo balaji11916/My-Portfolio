@@ -1,0 +1,344 @@
+/* Reset */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #000;
+  color: #eee;
+  overflow-x: hidden;
+}
+
+/* Navigation Bar */
+nav {
+  text-align: center;
+  background: #111;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  color: violet;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px purple, 0 0 20px violet;
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.title {
+  font-size: 3.5rem;
+  color: #fff;
+  animation: glow 2s infinite alternate;
+}
+
+.title span {
+  color: violet;
+  text-shadow: 0 0 20px purple;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  color: #ccc;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  color: #fff;
+  background: linear-gradient(90deg, purple, violet);
+  border-radius: 30px;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px violet, 0 0 25px purple;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px violet; }
+  to { text-shadow: 0 0 20px purple, 0 0 40px violet; }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #333;
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+/* Page Title */
+.page-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 20px 0;
+  color: violet;
+  animation: glow 2s infinite alternate;
+}
+
+/* Intro text */
+.intro {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 0 auto 40px;
+  width: 70%;
+  line-height: 1.6;
+  color: #ccc;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Card design for sections */
+.card {
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 15px;
+  padding: 25px;
+  margin: 20px auto;
+  width: 70%;
+  box-shadow: 0 0 15px rgba(128,0,128,0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: slideUp 1.5s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px violet, 0 0 30px purple;
+}
+
+.card h2 {
+  color: violet;
+  margin-bottom: 15px;
+}
+
+.card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.card li {
+  margin: 8px 0;
+  font-size: 1.1rem;
+  color: #eee;
+}
+
+/* Animations */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* Projects Section */
+.projects {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 20px;
+  padding: 25px;
+  width: 320px;
+  min-height: 350px;
+  text-align: left;
+  box-shadow: 0 0 20px rgba(128,0,128,0.3);
+  transition: transform 0.4s, box-shadow 0.4s;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-12px) scale(1.05);
+  box-shadow: 0 0 25px violet, 0 0 35px purple;
+}
+
+.project-card h2 {
+  color: violet;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.project-card ul {
+  margin: 10px 0 0 20px;
+  color: #eee;
+}
+
+.project-card li {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+/* Buttons inside cards */
+.project-card .btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  background: linear-gradient(90deg, purple, violet);
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card .btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px violet, 0 0 25px purple;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* Skills Section */
+.skills {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.skill-card {
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  min-height: 160px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(128,0,128,0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 0 20px violet, 0 0 30px purple;
+}
+
+.skill-card h2 {
+  color: violet;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* Contact Section */
+.contact {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+/* Contact Info */
+.contact-info {
+  text-align: left;
+  color: #ddd;
+  max-width: 300px;
+  line-height: 1.8;
+}
+.contact-info a {
+  color: violet;
+  text-decoration: none;
+}
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 12px;
+  color: #fff;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 1px solid violet;
+  box-shadow: 0 0 10px purple;
+}
+
+.contact-form button {
+  background: violet;
+  color: black;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: bac
+}
